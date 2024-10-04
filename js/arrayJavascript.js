@@ -20,6 +20,8 @@ function showItem() {
     for (let i = 0; i < items.length ; i++) {
            html += "<div class='col-6 m-2'>" + items[i] + "</div>" 
            html += "<div class='col-2 m-2'> <input type='button' class='btn btn-danger' onclick='deleteItem("+ i +")' value='X'> </div>" 
+
+           //html += `<div class="col-6 m-2"> ${items[i]} </div>`
     }
 
     // Guardamos el dato de la clave itemList que esta en LocalStorage
